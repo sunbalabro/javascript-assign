@@ -111,114 +111,75 @@
 // document.write("Result : " + newnumber );
 
 
-// Task #13
+//   Task 13  
 
-
-// var username = prompt("Enter a your username");
-// if (condition) {
-   
-// } else {
-    
+// var User = prompt("Please Enter your username");
+// for(var i=0;i<User.length;i++){
+//     if(User.charCodeAt(i) == 33 || User.charCodeAt(i) == 44 || User.charCodeAt(i) == 46 || User.charCodeAt(i) == 64){
+//         alert("Please Enter a valid username")
+//     }
 // }
 
-//var num =  String.fromCharCode(33);
-//alert(num);
 
+//   Task 14   
+
+
+// var A =["cake","apple pie","cookie","chips","patties"];
+// var Order = prompt("Welcome to ABC Bakery. What you want to order sir/madam?");
+// var indexOrder = Order.toLowerCase();
+// var index1 = A.indexOf(indexOrder);
+// if(index1 < 0 ){
+//     alert("We are sorry,"+userOrder+" is not availabe in our bakery");
+// }else{
+//     alert(userOrder+" is available at index "+index1+" in our bakery")
+// }
+
+
+//   Task 15   
+
+
+
+// function validate(userPassword) { 
+// for (let i = 0; i < userPassword.length; i++) {
+//     const element = userPassword[i];
+//     if(userPassword[0] == 1 || userPassword[0] == 2 ||userPassword[0] == 3 ||userPassword[0] == 4 ||userPassword[0] == 5 ||userPassword[0] == 6 ||userPassword[0] == 7 ||userPassword[0] == 8 ||userPassword[0] == 9){
+//         alert("Password can not begin with a number");
+//         prompt("Please Enter a valid password");
+//         return;
+//     }else if(userPassword.length <= 6){
+//         alert("Password Must be atleast six characters")
+//         prompt("Please Enter a valid password");
+//         return;
+//     }else if(userPassword.match(/[a-zA-Z0-9]/g).length < 0){
+//         alert("Password must contain number and characher");
+//         return;
+//     }else{
+//         alert("Welcome");
+//         return;
+//     }
+    
+// }   
+// }
+
+// var userPassword = prompt("Please Enter Your Password");
+// validate(userPassword);
 
 // Task #16
 
-// var str = 'University  Of  Karachi';
-// var chars = str.split('');
-// document.write( "<h3>"+chars[0] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[1] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[2] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[3] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[4] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[5] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[2] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[6] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[7] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[8] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[9] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[10] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[11] + "<br>");
-
-// var chars = str.split('');
-// document.write(chars[12] + "<br>");
-
-
-// var chars = str.split('');
-// document.write(chars[13] + "<br>");
-
-
-// var chars = str.split('');
-// document.write(chars[14] + "<br>");
-
-
-// var chars = str.split('');
-// document.write(chars[15] + "<br>");
-
-
-// var chars = str.split('');
-// document.write(chars[16] + "<br>");
-
-
-// var chars = str.split('');
-// document.write(chars[17] + "<br>");
-
-
-// var chars = str.split('');
-// document.write(chars[18] + "<br>");
-
-
-// var chars = str.split('');
-// document.write(chars[19] + "<br>");
-
-
-// var chars = str.split('');
-// document.write(chars[20] + "<br>");
-
-
-// var chars = str.split('');
-// document.write(chars[21] + "<br>");
-
-
-// var chars = str.split('');
-// document.write(chars[22] + "</h3><br>");
-
+// var university = "University of Karachi";
+// for (let i = 0; i < university.length; i++) {
+//     const element = university[i];
+//     document.write(element+"<br>");
+// }
 
 // Task #17
 
 
-//var country = "Pakistan";
-//var lastindex = country.charAt("7");
+// var userInput = prompt("please enter a word to get its last word");
 
-//document.write("User input : " + country + "<br>");
-//document.write("Last character of input : " + lastindex);
+// var lastInput = userInput[userInput.length-1];
+
+// document.write(`User inout: ${userInput} <br> Last character of input : ${lastInput}`)
 
 
 // Task #18
@@ -238,7 +199,7 @@
 
 // var num = prompt("Please enter a positive value");
 // var num1 = Math.round(num);
-// var num2 = Math.floor(num1);
+// var num2 = Math.floor(num);
 // var num3 = Math.ceil(num);
 // document.write("number : " + num + "<br>");
 // document.write("round off value : " + num1 + "<br>");
@@ -268,10 +229,7 @@
 // Task #4
 
  
-// var ran1 = Math.floor(Math.random()*10);
-// var ran2 = Math.floor(Math.random()*9);
- //document.write( "random dice value : " + ran1 + "<br>");
-// document.write( "random dice value : " + ran2);
+// document.write(`random dice value: ${Math.floor(Math.random()*(1-6)+6)} <br> random dice value: ${Math.floor(Math.random()*(1-6)+6)}`);
 
 
 
@@ -457,87 +415,227 @@
 
 
 
-//Task #13
+//Task #14
 
 
+// var customerName = "ABC Customer";
+// var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+// var month = months[new Date().getMonth()];
+// var numUnits = 410;
+// var charge = 16;
+// var netAmount = numUnits * charge;
+// var lateCharge = 350;
+// var grossAmount = netAmount + lateCharge;
 
+// document.write(`<h1>K-Electric Bill</h1>Customer Name: <b>${customerName}</b><br>Month: <b>${month}</b><br> Number of units: <b>${numUnits}</b><br>Charges per unit: <b>${charge}</b><br><br>Net Amount Payable(within Due Date) : <b>${netAmount}</b><br>Late payment surchargee: <b>${lateCharge}</b><br>Gross Amount Payable (after Due Date): <b>${grossAmount}</b><br>`)
 
+//Chapter 35-38 
 
+// Task 1  
 
+// function displayDate() {
+//     var today = new Date();
+//     document.write(today);
+// }
+// displayDate();
 
 
 
+//   Task 2   
 
 
 
+// function greet() {
+//     var fistName = prompt("Enter your First Name");
+//     var lastName = prompt("Enter your Last Name");
+//     alert("Welcome " + fistName + " "+ lastName);  
+// }
+// greet();
 
 
 
 
+//   Task 3   
 
 
 
 
+// function sum() {
+//     var num1 =  prompt("Enter the first Number");
+//     var num2 =  prompt("Enter the second Number");
+//     return num1+num2
+// }
+// sum();
 
 
+//   Task 4   
 
 
+// function calculator(num1,num2,operator) {
+//  var result = eval(num1+operator+num2);
+//  return result   
+// }
 
+//     var num1 =  prompt("Enter the first Number");
+//     var num2 =  prompt("Enter the second Number");
+//     var operator =  prompt("Enter the Operator");
 
+// var show = calculator(num1,num2,operator);
+// document.write(show);
 
 
 
+//   Task 5  
 
 
+// function convetSquare(num) {
+//     var result = Math.pow(num,2)
+//     document.write(result)
+// }
+// convetSquare(5);
 
 
+//   Task 6   
 
 
+// function factorial(num) {
+//     if (num === 0 || num === 1)
+//       return 1;
+//     for (var i = num - 1; i >= 1; i--) {
+//       num *= i;
+//     }
+//     return document.write(num);
+//   }
+//   factorial(5);
 
+//   Task 7     
 
+// function count(num1,num2) {
+//     for (let i = num1; i <= num2; i++) {
+//         document.write(i)
+//     }
+// }
+// count(1,10);
 
+//   Task 8  
 
+// function calculateHypotenuse(base,perpendicular) {
+//     function calculateSquare(num) {
+//         return Math.pow(num,2)
+//     }
+//     var hypotenuse = calculateSquare(base) + calculateSquare(perpendicular);
+//     return document.write(hypotenuse)
+// }
 
+// calculateHypotenuse(10,10);
 
 
+//   Task 9     
 
 
+// function calculateArea(height,width) {
+//     var area = height * width
+//     return document.write(area+"<br>");
+// }
+// var height = 100;
+// var width =100;
+// calculateArea(10,10);
 
+// calculateArea(height,width);
 
 
+//   Task 10    
 
 
+// function checkPalindrome(str){
+//        var cstr = str.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
+//         var ccount = 0;
+//         if(cstr==="") {
+//             console.log("Nothing found!");
+//             return false;
+//         }
+//         if ((cstr.length) % 2 === 0) {
+//             ccount = (cstr.length) / 2;
+//         } else {
+//             if (cstr.length === 1) {
+//                 console.log("Entry is a palindrome.");
+//                 return true;
+//             } else {
+//                 ccount = (cstr.length - 1) / 2;
+//             }
+//         }
+//         for (var x = 0; x < ccount; x++) {
+//             if (cstr[x] != cstr.slice(-1-x)[0]) {
+//                 console.log("Entry is not a palindrome.");
+//                 return false;
+//             }
+//         }
+//         console.log("The entry is a palindrome.");
+//         return document.write("this string is palindome");
+//     }
 
+//     checkPalindrome("madam");
 
+//  var userInput = prompt("Enter Any thing to convert first letter to capital");
+// function toTitleCase(str) {
+//     return str.replace(/\w\S*/g, function(txt){
+//         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+//     });
+// }
 
+//   Task 11     
 
 
+// var titleCase = toTitleCase(userInput);
+// document.write("Example String "+userInput+" <br> Expected Output :"+titleCase);
 
 
+//   Task 12   
 
 
 
+// function largeWord(string) {
+//     var str = string.split(" ");
+//     var large = 0;
+//     var word = null;
+//     for (var i = 0; i < str.length; i++) {
+//         if (large < str[i].length) {
+//             large = str[i].length;
+//             word = str[i];
+//         }
+//     }
+//     return word;
+// }
+// var large = largeWord("Web Development Tutorial");
+// document.write("Example String "+"Web Development Tutorila"+ "<br> Expected Output :"+large);
 
 
 
+//  Task 13   
 
 
 
+// function checkOccur(string,word) {
+//     var regex = new RegExp(word,"g")
+//     var count = (string.match(regex) || []).length;
+//     return document.write(count);
+// }
 
+// checkOccur("Hellow world is world hellow","o");
 
 
 
+//   Task 14  
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+// function calCircumference(radius) {
+//     var result = 2 * (3.14) *radius
+//     return document.write("The circumference of "+ radius +" is "+result+"<br>")
+// }
+// function calculateArea(radius) {
+//     var result = 3.14 * (Math.pow(radius,2));
+//       return document.write("The area of "+ radius +" is "+result)
+// }
+// calCircumference(35);
+// calculateArea(35);
